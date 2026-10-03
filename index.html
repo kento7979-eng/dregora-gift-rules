@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101418">
+<meta name="description" content="RLCraft Dregora TikTok LIVE ギフト妨害・救済ルール">
+<title>RLCraft Dregora｜ギフト妨害・救済ルール</title>
+<style>
+:root {
+  color-scheme: dark;
+  --bg:#0d1115; --panel:#151b21; --panel2:#1b232b; --line:#2b3640;
+  --text:#edf2f7; --muted:#a7b3bf; --red:#ff5d6c; --redbg:#2a1418;
+  --green:#5fe09a; --greenbg:#10281d; --gold:#f5ca62; --blue:#74c7ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+ radial-gradient(circle at 20% 0%,#16241e 0,transparent 30rem),
+ radial-gradient(circle at 80% 0%,#281519 0,transparent 30rem),
+ var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;line-height:1.7}
+main{width:min(980px,calc(100% - 28px));margin:auto;padding:28px 0 80px}
+.hero{padding:30px 20px 22px;text-align:center}
+.kicker{font-size:.82rem;letter-spacing:.18em;color:var(--gold);font-weight:800}
+h1{font-size:clamp(1.75rem,6vw,3rem);line-height:1.18;margin:.45rem 0 .6rem}
+.hero p{margin:.2rem auto;max-width:720px;color:var(--muted)}
+.rule-banner{margin:18px auto 0;max-width:780px;padding:16px;border:1px solid #4c4140;background:linear-gradient(100deg,#271619,#13261c);border-radius:16px;font-weight:800}
+.rule-banner .bad-t{color:var(--red)} .rule-banner .good-t{color:var(--green)}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:8px;overflow:auto;padding:10px;background:rgba(13,17,21,.92);backdrop-filter:blur(12px);border-block:1px solid var(--line)}
+nav a{flex:0 0 auto;color:var(--text);text-decoration:none;background:var(--panel2);padding:8px 12px;border-radius:999px;font-size:.86rem}
+section{margin-top:28px}
+h2{font-size:1.35rem;margin:0 0 12px}
+.section-note{color:var(--muted);margin:-4px 0 14px}
+.card,.pair-card{background:rgba(21,27,33,.94);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.table-wrap{overflow-x:auto;border-radius:18px;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;background:var(--panel);min-width:600px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#1c252d;color:var(--muted);font-size:.85rem;position:sticky;top:0}
+tr.bad td:nth-child(2){color:var(--red);font-weight:800}
+tr.good td:nth-child(2){color:var(--green);font-weight:800}
+tr.random td:nth-child(2){color:var(--gold);font-weight:800}
+details{background:var(--panel);border:1px solid var(--line);border-radius:16px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;padding:14px 16px;font-weight:800;background:var(--panel2)}
+.tier-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px}
+.effect-box{border-radius:14px;padding:12px}
+.effect-box.bad{background:var(--redbg);border:1px solid #51262d}
+.effect-box.good{background:var(--greenbg);border:1px solid #22543b}
+.effect-box h3{margin:0 0 8px;font-size:1rem}
+.effect-box.bad h3{color:var(--red)} .effect-box.good h3{color:var(--green)}
+.effect-box ul,.event ul{padding-left:1.1rem;margin:.35rem 0}
+.effect-box li{margin:.45rem 0}
+.effect-box li span{display:block;color:var(--muted);font-size:.86rem}
+.pair-card{display:grid;grid-template-columns:1fr 1fr;margin:12px 0}
+.event{padding:16px}
+.event.hindrance{background:linear-gradient(145deg,#291318,#1b1519)}
+.event.rescue{background:linear-gradient(145deg,#10281c,#151f1a)}
+.coin{font-size:.8rem;letter-spacing:.08em;color:var(--gold);font-weight:900}
+.event-title{font-size:1.08rem;font-weight:900;margin:4px 0 8px}
+.hindrance .event-title{color:var(--red)} .rescue .event-title{color:var(--green)}
+.event li{margin:.35rem 0;color:#d9e1e8}
+.fixed-note{font-size:.82rem;color:var(--green);font-weight:700;margin-bottom:8px}
+.callout{padding:14px 16px;border-left:4px solid var(--gold);background:#221f16;border-radius:10px;color:#f5ead0}
+footer{margin-top:42px;text-align:center;color:var(--muted);font-size:.82rem}
+.badge{display:inline-block;border:1px solid var(--line);padding:2px 8px;border-radius:999px;color:var(--muted);font-size:.75rem}
+@media(max-width:700px){
+ main{width:min(100% - 18px,980px);padding-top:12px}
+ .hero{padding:22px 8px 16px}
+ .tier-grid,.pair-card{grid-template-columns:1fr}
+ .event.hindrance{border-bottom:1px solid var(--line)}
+ table{font-size:.9rem;min-width:530px}
+ th,td{padding:8px}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="kicker">RLCraft DREGORA × TIKTOK LIVE</div>
+  <h1>ギフト妨害・救済ルール</h1>
+  <p>ギフトのコイン数に応じて、RLCraft Dregoraのゲーム内イベントが自動発動します。</p>
+  <div class="rule-banner">
+    500コイン以上は超シンプル：<br>
+    <span class="bad-t">区切りピッタリ＝☠ 妨害</span> ／
+    <span class="good-t">区切りの間＝♥ 救済</span><br>
+    <small>同じ救済区間なら、コイン数が違っても救済の強さは同じです。</small>
+  </div>
+</header>
+
+<nav>
+  <a href="#quick">早見表</a>
+  <a href="#under500">1～499</a>
+  <a href="#premium">500以上</a>
+  <a href="#notes">注意</a>
+</nav>
+
+<main>
+<section id="quick">
+  <h2>コイン早見表</h2>
+  <p class="section-note">迷ったらここだけ見ればOK。</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>コイン</th><th>結果</th><th>イベント</th></tr></thead>
+      <tbody><tr class="random"><td>1～499</td><td>🎲 ランダム</td><td>価格帯ごとの妨害 / 救済</td></tr>
+<tr class="bad"><td>500</td><td>☠ 妨害</td><td>Reaper Pair</td></tr>
+<tr class="good"><td>501～999</td><td>♥ 救済</td><td>Rescue I</td></tr>
+<tr class="bad"><td>1000</td><td>☠ 妨害</td><td>Predator Trio</td></tr>
+<tr class="good"><td>1001～4999</td><td>♥ 救済</td><td>Rescue II</td></tr>
+<tr class="bad"><td>5000</td><td>☠ 妨害</td><td>Hunter Gauntlet</td></tr>
+<tr class="good"><td>5001～9999</td><td>♥ 救済</td><td>Rescue III - Phoenix</td></tr>
+<tr class="bad"><td>10000</td><td>☠ 妨害</td><td>Nightmare Storm</td></tr>
+<tr class="good"><td>10001～14999</td><td>♥ 救済</td><td>Rescue IV - Grand Blessing</td></tr>
+<tr class="bad"><td>15000</td><td>☠ 妨害</td><td>Dread Assault</td></tr>
+<tr class="good"><td>15001～19999</td><td>♥ 救済</td><td>Rescue V - Divine Guard</td></tr>
+<tr class="bad"><td>20000</td><td>☠ 妨害</td><td>Black Storm</td></tr>
+<tr class="good"><td>20001～24999</td><td>♥ 救済</td><td>Rescue VI - Miracle Guard</td></tr>
+<tr class="bad"><td>25000</td><td>☠ 妨害</td><td>Predator Siege</td></tr>
+<tr class="good"><td>25001～29999</td><td>♥ 救済</td><td>Rescue VII - Celestial Aid</td></tr>
+<tr class="bad"><td>30000</td><td>☠ 妨害</td><td>Nightmare Siege</td></tr>
+<tr class="good"><td>30001～34999</td><td>♥ 救済</td><td>Rescue VIII - Supreme Aid</td></tr>
+<tr class="bad"><td>35000</td><td>☠ 妨害</td><td>Doom Legion</td></tr>
+<tr class="good"><td>35001～39999</td><td>♥ 救済</td><td>Rescue IX - Legendary Aid</td></tr>
+<tr class="bad"><td>40000</td><td>☠ 最大妨害</td><td>Final Calamity</td></tr>
+<tr class="good"><td>40001～</td><td>♥ 最大救済</td><td>Rescue MAX - Divine Miracle</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section id="under500">
+  <h2>1～499コイン：ランダム枠</h2>
+  <p class="section-note">妨害 / 救済のどちらになるかはランダム。その中から価格帯に合った効果が選ばれます。</p>
+
+  
+  <details >
+    <summary>1～9コイン｜LOW</summary>
+    <div class="tier-grid">
+      <div class="effect-box bad">
+        <h3>☠ 妨害候補</h3>
+        <ul><li><strong>Slowness I 10s</strong><span>移動速度低下 I：10秒</span></li>
+<li><strong>Mining Fatigue I 12s</strong><span>採掘速度低下 I：12秒</span></li>
+<li><strong>Weakness I 12s</strong><span>弱体化 I：12秒</span></li>
+<li><strong>Blindness 4s</strong><span>盲目 I：4秒</span></li>
+<li><strong>Hunger I 12s</strong><span>空腹 I：12秒</span></li>
+<li><strong>Nausea 6s</strong><span>吐き気 I：6秒</span></li>
+<li><strong>Poison I 3s</strong><span>毒 I：3秒</span></li>
+<li><strong>Turn Around 180</strong><span>向きを180°強制回転</span></li></ul>
+      </div>
+      <div class="effect-box good">
+        <h3>♥ 救済候補</h3>
+        <ul><li><strong>Speed I 20s</strong><span>移動速度上昇 I：20秒</span></li>
+<li><strong>Night Vision 60s</strong><span>暗視 I：60秒</span></li>
+<li><strong>Saturation</strong><span>満腹度回復 I：1秒</span></li>
+<li><strong>Bread x6</strong><span>パン×6</span></li>
+<li><strong>Cooked Beef x4</strong><span>ステーキ×4</span></li>
+<li><strong>Haste I 20s</strong><span>採掘速度上昇 I：20秒</span></li>
+<li><strong>Jump Boost II 20s</strong><span>跳躍力上昇 II：20秒</span></li>
+<li><strong>Baked Potato x8</strong><span>ベイクドポテト×8</span></li></ul>
+      </div>
+    </div>
+  </details>
+  <details >
+    <summary>10～99コイン｜MEDIUM</summary>
+    <div class="tier-grid">
+      <div class="effect-box bad">
+        <h3>☠ 妨害候補</h3>
+        <ul><li><strong>Zombie Ambush x2</strong><span>ゾンビ×2 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Skeleton Crossfire x2</strong><span>スケルトン×2 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Spider Pack x3</strong><span>クモ×3 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Silverfish Swarm x5</strong><span>シルバーフィッシュ×5 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Witch</strong><span>ウィッチ×1 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Banshee</strong><span>Banshee×1 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Xaphan</strong><span>Xaphan×1 / 召喚Mobは45秒で自動消滅</span></li>
+<li><strong>Thunderstorm 30s</strong><span>雷雨：30秒</span></li></ul>
+      </div>
+      <div class="effect-box good">
+        <h3>♥ 救済候補</h3>
+        <ul><li><strong>Regeneration II 12s</strong><span>再生 II：12秒</span></li>
+<li><strong>Resistance I 20s</strong><span>耐性 I：20秒</span></li>
+<li><strong>Strength I 20s</strong><span>攻撃力上昇 I：20秒</span></li>
+<li><strong>Fire Resistance 60s</strong><span>火炎耐性 I：60秒</span></li>
+<li><strong>Golden Apple x1</strong><span>金のリンゴ×1</span></li>
+<li><strong>Water Breathing 60s</strong><span>水中呼吸 I：60秒</span></li>
+<li><strong>Instant Health I</strong><span>即時回復 I</span></li>
+<li><strong>Explorer Blessing</strong><span>移動速度上昇 II：25秒 / 暗視 I：60秒</span></li></ul>
+      </div>
+    </div>
+  </details>
+  <details open>
+    <summary>100～499コイン｜HIGH</summary>
+    <div class="tier-grid">
+      <div class="effect-box bad">
+        <h3>☠ 妨害候補</h3>
+        <ul><li><strong>Reaper Pair</strong><span>Reaper×2 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Chupacabra Pair</strong><span>Chupacabra×2 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Warg Pair</strong><span>Warg×2 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Ventoraptor Pair</strong><span>Ventoraptor×2 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Hunter Party</strong><span>Reaper×1、Ventoraptor×1 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Nightmare Pair</strong><span>Banshee×1、Xaphan×1 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Predator Pack</strong><span>Warg×1、Chupacabra×1、Reaper×1 / 召喚Mobは60秒で自動消滅</span></li>
+<li><strong>Doom</strong><span>移動速度低下 II：15秒 / 弱体化 II：15秒 / 盲目 I：6秒 / 空腹 II：15秒</span></li>
+<li><strong>Storm Hunt</strong><span>雷雨：60秒 / Reaper×1、Warg×1 / 召喚Mobは60秒で自動消滅</span></li></ul>
+      </div>
+      <div class="effect-box good">
+        <h3>♥ 救済候補</h3>
+        <ul><li><strong>Instant Health II</strong><span>即時回復 II</span></li>
+<li><strong>Absorption IV 30s</strong><span>衝撃吸収 IV：30秒</span></li>
+<li><strong>Guardian Blessing</strong><span>再生 III：15秒 / 耐性 II：20秒</span></li>
+<li><strong>Berserker Blessing</strong><span>攻撃力上昇 II：30秒 / 移動速度上昇 II：30秒</span></li>
+<li><strong>Totem of Undying x1</strong><span>不死のトーテム×1</span></li>
+<li><strong>Purification</strong><span>主要デバフをまとめて解除</span></li>
+<li><strong>Phoenix Blessing</strong><span>即時回復 II / 再生 III：20秒 / 火炎耐性 I：60秒</span></li>
+<li><strong>Escape Blessing</strong><span>移動速度上昇 III：20秒 / 透明化 I：20秒 / 耐性 I：20秒</span></li>
+<li><strong>Enchanted Golden Apple x1</strong><span>エンチャント金のリンゴ×1</span></li></ul>
+      </div>
+    </div>
+  </details>
+</section>
+
+<section id="premium">
+  <h2>500コイン以上：区切りイベント</h2>
+  <p class="section-note">金額が上がるほど、妨害・救済ともに強く、派手で、長くなります。</p>
+  <div class="callout">
+    例：500＝妨害、501～999＝救済I。1000＝妨害、1001～4999＝救済II。<br>
+    救済区間では、区間内のどの金額でも効果内容は固定です。
+  </div>
+  
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">500 COINS</div>
+        <div class="event-title">☠ 妨害：Reaper Pair</div>
+        <ul><li>Reaper×2</li><li>召喚Mobは45秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">501～999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue I</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>即時回復 II</li><li>再生 II：20秒</li><li>衝撃吸収 II：30秒</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">1,000 COINS</div>
+        <div class="event-title">☠ 妨害：Predator Trio</div>
+        <ul><li>Warg×1、Chupacabra×1、Reaper×1</li><li>弱体化 I：12秒</li><li>召喚Mobは60秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">1001～4999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue II</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>即時回復 II</li><li>再生 II：30秒</li><li>耐性 I：45秒</li><li>移動速度上昇 I：45秒</li><li>金のリンゴ×1</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">5,000 COINS</div>
+        <div class="event-title">☠ 妨害：Hunter Gauntlet</div>
+        <ul><li>Reaper×1、Warg×1、Chupacabra×1、Ventoraptor×1、Banshee×1</li><li>弱体化 II：25秒</li><li>空腹 I：25秒</li><li>召喚Mobは75秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">5001～9999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue III - Phoenix</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 III：45秒</li><li>耐性 II：75秒</li><li>火炎耐性 I：120秒</li><li>衝撃吸収 IV：75秒</li><li>不死のトーテム×1、エンチャント金のリンゴ×1</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">10,000 COINS</div>
+        <div class="event-title">☠ 妨害：Nightmare Storm</div>
+        <ul><li>雷雨：90秒</li><li>Banshee×1、Xaphan×1、Reaper×1、Warg×1、Ventoraptor×1</li><li>移動速度低下 II：30秒</li><li>弱体化 II：30秒</li><li>召喚Mobは90秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">10001～14999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue IV - Grand Blessing</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 III：60秒</li><li>耐性 II：90秒</li><li>攻撃力上昇 II：90秒</li><li>移動速度上昇 II：90秒</li><li>火炎耐性 I：180秒</li><li>衝撃吸収 IV：90秒</li><li>不死のトーテム×2、エンチャント金のリンゴ×1、金のリンゴ×2</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">15,000 COINS</div>
+        <div class="event-title">☠ 妨害：Dread Assault</div>
+        <ul><li>Reaper×2、Warg×1、Chupacabra×1、Ventoraptor×1、Banshee×1</li><li>弱体化 II：40秒</li><li>空腹 II：40秒</li><li>召喚Mobは105秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">15001～19999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue V - Divine Guard</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 III：75秒</li><li>耐性 II：105秒</li><li>攻撃力上昇 II：105秒</li><li>移動速度上昇 II：105秒</li><li>火炎耐性 I：210秒</li><li>衝撃吸収 IV：105秒</li><li>不死のトーテム×2、エンチャント金のリンゴ×2、金のリンゴ×2</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">20,000 COINS</div>
+        <div class="event-title">☠ 妨害：Black Storm</div>
+        <ul><li>雷雨：120秒</li><li>Reaper×2、Warg×1、Chupacabra×1、Ventoraptor×1、Banshee×1、Xaphan×1</li><li>移動速度低下 II：50秒</li><li>弱体化 II：50秒</li><li>盲目 I：6秒</li><li>召喚Mobは120秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">20001～24999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue VI - Miracle Guard</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 III：90秒</li><li>耐性 II：120秒</li><li>攻撃力上昇 II：120秒</li><li>移動速度上昇 II：120秒</li><li>火炎耐性 I：240秒</li><li>衝撃吸収 IV：120秒</li><li>不死のトーテム×2、エンチャント金のリンゴ×2、金のリンゴ×4</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">25,000 COINS</div>
+        <div class="event-title">☠ 妨害：Predator Siege</div>
+        <ul><li>Warg×2、Chupacabra×2、Ventoraptor×2、Reaper×1、Banshee×1</li><li>移動速度低下 II：60秒</li><li>弱体化 II：60秒</li><li>空腹 II：60秒</li><li>召喚Mobは135秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">25001～29999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue VII - Celestial Aid</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 IV：90秒</li><li>耐性 III：135秒</li><li>攻撃力上昇 II：135秒</li><li>移動速度上昇 II：135秒</li><li>火炎耐性 I：270秒</li><li>衝撃吸収 IV：135秒</li><li>不死のトーテム×2、エンチャント金のリンゴ×2、金のリンゴ×4</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">30,000 COINS</div>
+        <div class="event-title">☠ 妨害：Nightmare Siege</div>
+        <ul><li>雷雨：150秒</li><li>Banshee×2、Xaphan×2、Reaper×1、Warg×1、Ventoraptor×1、Chupacabra×1</li><li>移動速度低下 II：70秒</li><li>弱体化 II：70秒</li><li>盲目 I：8秒</li><li>召喚Mobは150秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">30001～34999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue VIII - Supreme Aid</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 IV：105秒</li><li>耐性 III：150秒</li><li>攻撃力上昇 III：150秒</li><li>移動速度上昇 III：150秒</li><li>火炎耐性 I：300秒</li><li>衝撃吸収 IV：150秒</li><li>暗視 I：180秒</li><li>不死のトーテム×3、エンチャント金のリンゴ×2、金のリンゴ×6</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">35,000 COINS</div>
+        <div class="event-title">☠ 妨害：Doom Legion</div>
+        <ul><li>Reaper×3、Warg×2、Chupacabra×1、Ventoraptor×1、Banshee×1、Xaphan×1</li><li>移動速度低下 II：80秒</li><li>弱体化 II：80秒</li><li>空腹 II：80秒</li><li>盲目 I：10秒</li><li>召喚Mobは165秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">35001～39999 COINS</div>
+        <div class="event-title">♥ 救済：Rescue IX - Legendary Aid</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 IV：120秒</li><li>耐性 III：165秒</li><li>攻撃力上昇 III：165秒</li><li>移動速度上昇 III：165秒</li><li>火炎耐性 I：330秒</li><li>衝撃吸収 IV：165秒</li><li>暗視 I：240秒</li><li>不死のトーテム×3、エンチャント金のリンゴ×3、金のリンゴ×8</li></ul>
+      </div>
+    </article>
+    
+
+    <article class="pair-card">
+      <div class="event hindrance">
+        <div class="coin">40,000 COINS</div>
+        <div class="event-title">☠ 妨害：Final Calamity</div>
+        <ul><li>雷雨：180秒</li><li>Reaper×3、Warg×3、Chupacabra×1、Ventoraptor×1、Banshee×1、Xaphan×1</li><li>移動速度低下 II：90秒</li><li>弱体化 II：90秒</li><li>空腹 II：90秒</li><li>盲目 I：12秒</li><li>召喚Mobは180秒で自動消滅</li></ul>
+      </div>
+      <div class="event rescue">
+        <div class="coin">40001～ COINS</div>
+        <div class="event-title">♥ 救済：Rescue MAX - Divine Miracle</div>
+        <div class="fixed-note">この区間は、何コインでも救済の強さは同じ</div>
+        <ul><li>主要デバフをまとめて解除</li><li>即時回復 II</li><li>再生 IV：135秒</li><li>耐性 III：180秒</li><li>攻撃力上昇 III：180秒</li><li>移動速度上昇 III：180秒</li><li>火炎耐性 I：360秒</li><li>衝撃吸収 IV：180秒</li><li>暗視 I：360秒</li><li>不死のトーテム×3、エンチャント金のリンゴ×3、金のリンゴ×8</li></ul>
+      </div>
+    </article>
+    
+</section>
+
+<section id="notes">
+  <h2>補足</h2>
+  <div class="card" style="padding:16px">
+    <p><strong>召喚Mobは永久には残りません。</strong> イベントごとに設定された時間で自動消滅します。</p>
+    <p><strong>ワールド破壊・装備消去・アイテム消去・永久デバフは入れていません。</strong></p>
+    <p><strong>40001コイン以上は最大救済で固定</strong>です。それ以上コインが増えても、現行仕様では救済の強さは同じです。</p>
+    <p class="badge">仕様：Dregora Gift Engine v4.7.4</p>
+  </div>
+</section>
+
+<footer>
+  配信中の実際の発動内容は、ゲーム内表示を優先してください。<br>
+  仕様は配信バランス調整で変更される場合があります。
+</footer>
+</main>
+</body>
+</html>
